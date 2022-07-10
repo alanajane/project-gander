@@ -17,6 +17,11 @@ Gander is ...
 * Bootstrap
 * Deployed with Heroku
 
+## New skills gained
+
+* Wireframing - first time creating wireframes
+* Figma - used for the first time for wireframing and app design
+
 ## Approach Taken
 
 ## Wireframes
