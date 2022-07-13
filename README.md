@@ -24,5 +24,7 @@ Gander is ...
 
 * Insights - interesting insights from the the user's dating data, such as how many dates total, dates this month/year, most dates with which person, source (e.g. Bumble).
 
+* User to be able to upload multiple images.
+
 ## Unsolved problems
 
