@@ -8,23 +8,21 @@ Gander is ...
 
 ## Technologies Used
 
-* Javascript
-* node.js
+* MongoDB and Mongoose
 * Express
-* MongoDB
-* Mongoose
+* node.js
 * EJS
+* Javascript
 * Bootstrap
 * Deployed with Heroku
-
-## New skills gained
-
-* Wireframing - first time creating wireframes
-* Figma - used for the first time for wireframing and app design
 
 ## Approach Taken
 
 ## Wireframes
+
+## Ideas for future features
+
+* Insights - interesting insights from the the user's dating data, such as how many dates total, dates this month/year, most dates with which person, source (e.g. Bumble).
 
 ## Unsolved problems
 
