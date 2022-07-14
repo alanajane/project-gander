@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../public/css/styles.css">
+    <title><%= tabTitle %></title>
+</head>
+<body>
+    <header class="bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                <a class="navbar-brand" href="/">shoal
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#burger-content"
+                    aria-controls="burger-content"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="burger-content" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <% if (currentUser) { %>
+                                <a class="nav-link" href="/profiles/">View profiles</a>
+                            <% } %> 
+                        </li>
+                        <li class="nav-item">
+                            <% if (currentUser) { %>
+                                <a class="nav-link" href="/profiles/new">Add new profile</a>
+                            <% } %> 
+                        </li>
+                        <li class="nav-item">
+                            <% if (currentUser) { %>
+                                <a class="nav-link" href="/dates/new">Add new date</a>
+                            <% } %> 
+                        </li>
+
+                        <li class="nav-item">
+                            <% if (currentUser) { %>
+                                <a class="nav-link" href="#">Insights</a>
+                            <% } %> 
+                        </li>
+
+                        <li class="nav-item">
+                            <% if (currentUser) { %>
+                                <form action="/logout?_method=DELETE" method="post">
+                                    <input class="btn" type="submit" value="Log Out">
+                                </form>
+                                <% } else { %> 
+                                    <a class="nav-link" href="/login">Log In</a>
+                                <% } %> 
+                        </li>
+                        <li class="nav-item">
+                            <% if (!currentUser) { %>
+                                <a class="nav-link" href="/users/signup">Sign Up</a>
+                            <% } %> 
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>

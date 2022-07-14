@@ -1,0 +1,32 @@
+<%- include ('../partials/head.ejs') %>
+
+<div class="container">
+    <h1>Add new profile</h1>
+    <form>    
+        <div class="form-floating mb-3">
+            <input class="form-control" type="text" id="text" id="name">
+            <label class="form-label" for="name">Name</label>
+        </div>
+    
+        <div class="form-floating mb-3">
+            <input class="form-control" type="text" id="text" id="nickname">
+            <label class="form-label" for="nickname">Nickname</label>
+        </div>
+    
+        <div class="form-floating mb-3">
+            <input class="form-control" type="text" id="text" id="howMet">
+            <label class="form-label" for="howMet">How met</label>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="imageURL">Image</label>
+            <input class="form-control" id="imageURL" type="file">
+        </div>
+    
+        <input class="btn btn-primary" type="submit" value="Create profile"/>
+    
+    </form>
+
+</div>
+
+<%- include ('../partials/footer.ejs') %>

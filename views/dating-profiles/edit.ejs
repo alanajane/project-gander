@@ -1,0 +1,31 @@
+<%- include ('./partials/head.ejs') %>
+<div class="form-container">
+  <h1>Update <%= profile.name %></h1>
+  <form action="<%= baseUrl %>/<%= profile.id %>?_method=PUT" method="post">
+    <label for="name">Name</label>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      value="<%= profile.name %>" />
+
+    <label for="identifier">Identifier</label>
+    <input
+      type="identifier"
+      name="identifier"
+      id="identifier"
+      value="<%= profile.identifier %>" />
+
+    <label for="description">Description</label>
+    <textarea
+      name="description"
+      id="description"
+      rows="10"
+      cols="32"
+      ><%= profile.description %></textarea>
+    />
+
+    <input class="btn btn-primary" type="submit" value="Update Profile" />
+  </form>
+</div>
+<%- include ('./partials/footer.ejs') %>

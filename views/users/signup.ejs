@@ -1,0 +1,34 @@
+<%- include('../partials/head.ejs') %>
+
+<div class="container">
+  <h1>Sign Up</h1>
+  <div class="flash-messages">
+    <% if (messages.info) { %>
+      <% for (let msg of messages.info) { %>
+        <p class="info"><%= msg %></p>
+      <% } %>
+    <% } %>
+    <% if (messages.success) { %>
+      <% for (let msg of messages.success) { %>
+        <p class="success"><%= msg %></p>
+      <% } %>
+    <% } %>
+    <% if (messages.error) { %>
+      <% for (let msg of messages.error) { %>
+        <p class="error"><%= msg %></p>
+      <% } %>
+    <% } %>
+  </div>
+  <form action="<%= baseUrl %>" method="post">
+    <div class="form-group mb-3">
+      <label for="username" class="form-label">Username</label>
+      <input type="text" class="form-control" name="username" id="username" required />
+    </div>
+    <div class="form-group mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" name="password" id="password" required />
+    </div>
+    <input class="btn btn-primary" type="submit" value="Sign Up" />
+  </form>
+</div>
+<%- include('../partials/footer.ejs') %>
