@@ -1,5 +1,4 @@
-# [shoal](https://shoal-app.herokuapp.com/)
-
+# Shoal
 
 *With so many fish in the sea,<br />
 Which one is right for me?*
@@ -24,7 +23,7 @@ This is my first full-stack CRUD (Create, Read, Update and Delete) app. It follo
 
 [Link to app](https://shoal-app.herokuapp.com/)
 
-Update: this app was deployed using Heroku's free tier which is no longer available
+Update: this app was deployed using Heroku's free tier which is unfortunately no longer available
 
 ## Technologies Used
 
