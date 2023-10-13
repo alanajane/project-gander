@@ -25,6 +25,8 @@ This is my first full-stack CRUD (Create, Read, Update and Delete) app. It follo
 
 Update: this app was deployed using Heroku's free tier which is unfortunately no longer available
 
+<img width="1511" alt="shoal-homepage-screenshot" src="https://github.com/lanacee/project-shoal/assets/78309395/7705dae2-fad5-468c-a26b-9b1687f64159">
+
 ## Technologies Used
 
 * MongoDB and Mongoose
